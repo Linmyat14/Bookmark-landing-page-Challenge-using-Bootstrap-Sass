@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+$font-family-sans-serif: 'Rubik', sans-serif;
+$font-size-base: 1.05rem;
+$btn-padding-x: 1.1rem;
+// $input-btn-padding-y: 1rem;
+$input-btn-padding-x:  1.4rem;
+$accordion-button-body-padding-x: 5rem;
+$primary: hsl(231, 69%, 60%);
+$secondary: hsl(229, 8%, 60%);
+$danger: hsl(0, 94%, 66%);
+$nav-underline-link-active-color: $danger;
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $danger;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 9,
+);
+
+.container {
+   
+    ul {
+        li{
+            text-transform: uppercase;
+        }
+    }
+}
+#hero{
+    background-image: url(../bookmark-landing-page-master/images/rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 35%;
+}
+#features{
+    background-image: url(../bookmark-landing-page-master/images/rectangle-left.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 35%;
+}
+.hero-img{
+    img{
+        width: 100%;
+    }
+}
+.nav-underline{
+    color: $danger;
+}
+footer{
+    background-color: hsl(229, 31%, 21%);
+}
+
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@include media-breakpoint-only(md) { 
+    .contact-btn{
+        width: 150px;
+    }
+ }
